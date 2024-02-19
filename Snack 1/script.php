@@ -1,12 +1,12 @@
 <?php
 
 $matches = [
-    'Olimpia Milano - Cantù | 55-60'
-    'Dinamo Sassari - Derthona | 62-79'
-    'Cremona - Napoli | 90-83'
-    'Brescia - Reggiana | 86-63'
+    'Olimpia Milano - Cantù | 55-60',
+    'Dinamo Sassari - Derthona | 62-79',
+    'Cremona - Napoli | 90-83',
+    'Brescia - Reggiana | 86-63',
     'Virtus Bologna - Scafati | 94-67'
-]
+];
 
 ?>
 
@@ -22,11 +22,10 @@ $matches = [
 <body>
     <h1> Partite Giornata 1</h1>
     <ul>
-        <?php for(matches as match) { ?>
-        <li> <?php echo $match ?></li>
+        <?php for($i = 0; $i < count($matches); $i++) { ?>
+        <li> <?php echo $matches[$i] ?></li>
         
-         <?php} ?>
-         <li></li>
+         <?php } ?>
     </ul>
 </body>
 </html>
